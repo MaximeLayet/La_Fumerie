@@ -3,7 +3,7 @@
 	<main>
 		<div class="question">As-tu plus de 18 ans ?</div>
 		<div class="btn">
-			<button id="yes">OUI</button>
+			<router-link to="/main"><button id="yes">OUI</button></router-link>
 			<a href="http://www.google.fr"><button id="no">NON</button></a>
 		</div>
 	</main>
@@ -41,7 +41,6 @@ button {
 	cursor: pointer;
 	font-size: 2vh;
 	font-weight: bold;
-
 	border-radius: 50%;
 	border: 5px solid #0d0d0d;
 }
