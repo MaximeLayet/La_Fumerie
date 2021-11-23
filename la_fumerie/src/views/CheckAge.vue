@@ -7,21 +7,22 @@
 			<a href="http://www.google.fr"><button id="no">NON</button></a>
 		</div>
 	</main>
-	<Footer />
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
+
 export default {
 	components: {
-		Header,
-		Footer
+		Header
 	}
 };
 </script>
 
 <style>
+main {
+	min-height: 100vh;
+}
 .question {
 	padding-bottom: 1vh;
 	margin-bottom: 1vh;
@@ -43,6 +44,7 @@ button {
 	font-weight: bold;
 	border-radius: 50%;
 	border: 5px solid #0d0d0d;
+	transition: 0.3s;
 }
 
 #yes {
@@ -55,5 +57,7 @@ button {
 
 button:hover {
 	filter: invert(1);
+	transform: scale(1.5);
+	transition: 0.3s;
 }
 </style>

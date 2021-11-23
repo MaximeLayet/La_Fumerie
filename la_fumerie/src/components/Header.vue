@@ -1,10 +1,6 @@
 <template>
 	<header>
-		<img alt="Vue logo" src="../assets/logoF.png" />
-		<!-- <div class="not-in-check">
-			<h1><span class="fumerie">La Fumerie</span><br />VODKA BAR</h1>
-			<h2>8 rue de l'Aguillerie, Montpellier</h2>
-		</div> -->
+		<img alt="La Fumerie vodka bar Montpellier" src="../assets/logoF.png" />
 	</header>
 </template>
 
@@ -23,5 +19,6 @@ img {
 	margin-top: 3vh;
 	width: 40vh;
 	filter: invert(1);
+	object-fit: cover;
 }
 </style>
