@@ -3,6 +3,10 @@
 </template>
 
 <style>
+body {
+	width: 100%;
+}
+
 #app {
 	font-family: "Open sans", Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
