@@ -1,5 +1,6 @@
 <template>
 	<Header />
+
 	<main>
 		<div class="question">As-tu plus de 18 ans ?</div>
 		<div class="btn">
