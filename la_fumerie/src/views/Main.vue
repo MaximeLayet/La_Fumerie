@@ -1,4 +1,3 @@
-d
 <template>
 	<Header />
 	<div class="first-block">
@@ -39,6 +38,12 @@ export default {
 </script>
 
 <style scoped>
+body {
+	margin: 0px;
+	min-height: 100%;
+	width: 100%;
+}
+
 .first-block {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -124,5 +129,27 @@ p {
 	text-shadow: 0 0 70px #000, 0 0 10px #000, 0 0 60px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0),
 		0 0 100px rgb(0, 0, 0);
 	transition: 0.3s;
+}
+
+@media only screen and (max-width: 768px) {
+	.first-block {
+		display: flex;
+		flex-direction: column;
+		margin-inline: 1.5vh;
+		margin-bottom: 3vh;
+	}
+
+	.info {
+		border-right: solid 1.5em #f2f2f2;
+	}
+
+	.about {
+		border-left: solid 1.5em #f2f2f2;
+	}
+
+	h1 {
+		font-size: 1.7em;
+		letter-spacing: 0.3em;
+	}
 }
 </style>
