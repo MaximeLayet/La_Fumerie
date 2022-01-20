@@ -1,6 +1,5 @@
 <template>
 	<Header />
-
 	<main>
 		<div class="question">As-tu plus de 18 ans ?</div>
 		<div class="btn">
@@ -8,22 +7,32 @@
 			<a href="http://www.google.fr"><button id="no">NON</button></a>
 		</div>
 	</main>
+	<Footer />
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
 	components: {
-		Header
+		Header,
+		Footer
 	}
 };
 </script>
 
 <style>
-main {
-	min-height: 100vh;
+body {
+	margin: 0px;
+	min-height: 100%;
+	width: 100%;
 }
+
+main {
+	margin-bottom: 10em;
+}
+
 .question {
 	padding-bottom: 1vh;
 	margin-bottom: 1vh;
@@ -36,7 +45,6 @@ main {
 .btn {
 	display: flex;
 	justify-content: space-around;
-	margin-bottom: 25vh;
 }
 
 button {

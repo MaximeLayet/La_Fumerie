@@ -11,13 +11,10 @@ export default {
 </script>
 
 <style scoped>
-.fumerie {
-	font-size: 8vh;
-}
-
 img {
-	margin-top: 3vh;
-	width: 30%;
+	margin-top: 1vh;
+	margin-bottom: 3vh;
+	width: 450px;
 	filter: invert(1);
 	object-fit: cover;
 }
