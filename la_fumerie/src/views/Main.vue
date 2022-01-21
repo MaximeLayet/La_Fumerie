@@ -63,17 +63,13 @@ body {
 	border-top: solid 1.5rem #f2f2f2;
 	border-right: solid 1.5rem #f2f2f2;
 	border-bottom: solid 1.5rem #f2f2f2;
-	position: relative;
 }
 
 h1 {
 	font-size: 1.7em;
 	letter-spacing: 0.3em;
 	line-height: 2.5em;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	margin-top: 2rem;
 }
 
 h2 {
@@ -99,15 +95,15 @@ a {
 .circle {
 	margin-inline: 10vh;
 	position: relative;
-	width: 20vh;
-	height: 20vh;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 	border: solid 2vh #fff;
 }
 
 p {
 	position: absolute;
-	top: 15%;
+	top: 25%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 7vh;
@@ -120,7 +116,7 @@ p {
 
 .google {
 	font-size: 5vh;
-	top: 25%;
+	top: 30%;
 }
 
 .linkto:hover {
@@ -130,8 +126,9 @@ p {
 		0 0 100px rgb(0, 0, 0);
 	transition: 0.3s;
 }
+/* responsive  */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
 	.first-block {
 		display: flex;
 		flex-direction: column;
@@ -150,6 +147,16 @@ p {
 	h1 {
 		font-size: 1.7em;
 		letter-spacing: 0.3em;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	.main {
+		flex-wrap: wrap;
+	}
+
+	.circle {
+		margin: 2rem;
 	}
 }
 </style>

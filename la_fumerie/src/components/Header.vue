@@ -14,7 +14,7 @@ export default {
 img {
 	margin-top: 1vh;
 	margin-bottom: 3vh;
-	width: 450px;
+	width: 33%;
 	filter: invert(1);
 	object-fit: cover;
 }
