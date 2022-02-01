@@ -5,6 +5,8 @@
 <style>
 body {
 	width: 100%;
+	margin: 0px;
+	min-height: 100%;
 }
 
 #app {

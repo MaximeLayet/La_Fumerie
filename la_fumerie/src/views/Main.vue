@@ -1,58 +1,60 @@
 <template>
 	<Header />
-	<div class="slider">
-		<button @click="prev" type="button" class="btn btn-left">
-			<i class="fas fa-chevron-circle-left"></i>
-		</button>
-		<div
-			class="container-slides"
-			:style="{ transform: `translateX(${index}px)`, transition: `${transition}` }"
-		>
-			<img class="img-slider" src="../assets/Bas1.jpg" />
-			<img class="img-slider" src="../assets/img1.jpg" />
-			<img class="img-slider" src="../assets/img2.jpg" />
-			<img class="img-slider" src="../assets/img3.jpg" />
-			<img class="img-slider" src="../assets/img4.jpg" />
-			<img class="img-slider" src="../assets/img5.jpg" />
-			<img class="img-slider" src="../assets/img6.jpg" />
-		</div>
-		<button @click="next" type="button" class="btn btn-right">
-			<i class="fas fa-chevron-circle-right"></i>
-		</button>
-	</div>
-	<div class="first-block">
-		<div class="info">
-			<h2>Happy Hour</h2>
-			<h3>18h - 21h</h3>
-		</div>
-		<div class="about">
-			<h1>8 rue de l'Aguillerie<br />Montpellier</h1>
-		</div>
-	</div>
-	<div class="main">
-		<div class="circle">
-			<a href="https://www.instagram.com/lafumerie_mtp/" target="_blank">
-				<p>Instagram</p>
-			</a>
-		</div>
-		<div class="circle">
-			<a href="https://www.facebook.com/LaFumerieMtp" target="_blank">
-				<p>Facebook</p>
-			</a>
-		</div>
-		<div class="circle">
-			<a
-				href="https://www.google.com/search?q=la+fumerie&sxsrf=APq-WBsHTlR6J9MPKPtj7P8MOJWdsfwDHA%3A1643278553290&source=hp&ei=2XDyYZ7uDsrwaMiMoNgG&iflsig=AHkkrS4AAAAAYfJ-6TlDvyPI9SKmZw0Y77O-YDtJTnje&ved=0ahUKEwjevrvT2dH1AhVKOBoKHUgGCGsQ4dUDCAc&uact=5&oq=la+fumerie&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyCwguEIAEEMcBEK8BMgsILhCABBDHARCvATILCC4QgAQQxwEQrwEyCwguEIAEEMcBEK8BMgUIABCABDILCC4QgAQQxwEQrwEyCwguEIAEEMcBEK8BMgsILhCABBDHARCvATIFCAAQgAQ6CgguEMcBEKMCECc6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARCjAjoRCC4QgAQQsQMQgwEQxwEQ0QM6CwguEIAEELEDEIMBOg4ILhCABBCxAxDHARCjAjoECC4QJzoOCC4QgAQQsQMQxwEQ0QM6CAgAEIAEELEDOgUILhCABDoICC4QgAQQsQM6BggAEAoQAzoLCC4QgAQQxwEQ0QM6BwgAEIAEEApQAFjYDGCVD2gAcAB4AIABjwGIAaYIkgEDNC42mAEAoAEB&sclient=gws-wiz#lrd=0x12b6afa788015555:0xa8f41e13f27ed302,1,,,"
-				target="_blank"
+	<main>
+		<div class="slider">
+			<button @click="prev" type="button" class="btn btn-left">
+				<i class="fas fa-chevron-circle-left"></i>
+			</button>
+			<div
+				class="container-slides"
+				:style="{ transform: `translateX(${index}px)`, transition: `${transition}` }"
 			>
-				<p class="google">Mon Avis Google</p>
-			</a>
+				<img class="img-slider" src="../assets/Bas1.jpg" />
+				<img class="img-slider" src="../assets/img1.jpg" />
+				<img class="img-slider" src="../assets/img2.jpg" />
+				<img class="img-slider" src="../assets/img3.jpg" />
+				<img class="img-slider" src="../assets/img4.jpg" />
+				<img class="img-slider" src="../assets/img5.jpg" />
+				<img class="img-slider" src="../assets/img6.jpg" />
+			</div>
+			<button @click="next" type="button" class="btn btn-right">
+				<i class="fas fa-chevron-circle-right"></i>
+			</button>
 		</div>
-		<div class="circle">
-			<a href></a>
-			<p>Mini-Map</p>
+		<div class="first-block">
+			<div class="info">
+				<h2>Happy Hour</h2>
+				<h3>18h - 21h</h3>
+			</div>
+			<div class="about">
+				<h1>8 rue de l'Aguillerie<br />Montpellier</h1>
+			</div>
 		</div>
-	</div>
+		<div class="main">
+			<div class="circle">
+				<a href="https://www.instagram.com/lafumerie_mtp/" target="_blank">
+					<p>Instagram</p>
+				</a>
+			</div>
+			<div class="circle">
+				<a href="https://www.facebook.com/LaFumerieMtp" target="_blank">
+					<p>Facebook</p>
+				</a>
+			</div>
+			<div class="circle">
+				<a
+					href="https://www.google.com/search?q=la+fumerie&sxsrf=APq-WBsHTlR6J9MPKPtj7P8MOJWdsfwDHA%3A1643278553290&source=hp&ei=2XDyYZ7uDsrwaMiMoNgG&iflsig=AHkkrS4AAAAAYfJ-6TlDvyPI9SKmZw0Y77O-YDtJTnje&ved=0ahUKEwjevrvT2dH1AhVKOBoKHUgGCGsQ4dUDCAc&uact=5&oq=la+fumerie&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyCwguEIAEEMcBEK8BMgsILhCABBDHARCvATILCC4QgAQQxwEQrwEyCwguEIAEEMcBEK8BMgUIABCABDILCC4QgAQQxwEQrwEyCwguEIAEEMcBEK8BMgsILhCABBDHARCvATIFCAAQgAQ6CgguEMcBEKMCECc6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARCjAjoRCC4QgAQQsQMQgwEQxwEQ0QM6CwguEIAEELEDEIMBOg4ILhCABBCxAxDHARCjAjoECC4QJzoOCC4QgAQQsQMQxwEQ0QM6CAgAEIAEELEDOgUILhCABDoICC4QgAQQsQM6BggAEAoQAzoLCC4QgAQQxwEQ0QM6BwgAEIAEEApQAFjYDGCVD2gAcAB4AIABjwGIAaYIkgEDNC42mAEAoAEB&sclient=gws-wiz#lrd=0x12b6afa788015555:0xa8f41e13f27ed302,1,,,"
+					target="_blank"
+				>
+					<p class="google">Mon Avis Google</p>
+				</a>
+			</div>
+			<div class="circle">
+				<a href></a>
+				<p>Mini-Map</p>
+			</div>
+		</div>
+	</main>
 	<Footer />
 </template>
 
@@ -73,19 +75,19 @@ export default {
 	methods: {
 		prev() {
 			if (this.index === 0) {
-				this.index = -1500;
+				this.index = -2100;
 				this.transition = "none";
 			} else {
-				this.index += 500;
+				this.index += 700;
 				this.transition = "transform 2s ease";
 			}
 		},
 		next() {
-			if (this.index === -1500) {
+			if (this.index === -2100) {
 				this.index = 0;
 				this.transition = "none";
 			} else {
-				this.index -= 500;
+				this.index -= 700;
 				this.transition = "transform 2s ease";
 			}
 		}
@@ -94,9 +96,19 @@ export default {
 </script>
 
 <style scoped>
+body {
+	margin: 0px;
+	min-height: 100%;
+	width: 100%;
+}
+
+main {
+	margin-bottom: 10em;
+}
+
 .slider {
-	width: 500px;
-	height: 300px;
+	width: 700px;
+	height: 500px;
 	margin: 100px auto 100px;
 	overflow: hidden;
 	position: relative;
@@ -109,6 +121,7 @@ export default {
 .img-slider {
 	width: 100%;
 	height: auto;
+	object-fit: cover;
 }
 
 .btn {
@@ -125,10 +138,7 @@ export default {
 	justify-content: center;
 	align-items: center;
 	background: transparent;
-}
-
-.fas {
-	width: 15px;
+	color: #f2f2f2;
 }
 
 .btn-left {
@@ -141,12 +151,6 @@ export default {
 	top: 50%;
 	right: 5px;
 	transform: translateY(-50%);
-}
-
-body {
-	margin: 0px;
-	min-height: 100%;
-	width: 100%;
 }
 
 .first-block {
@@ -198,7 +202,7 @@ a {
 }
 
 .circle {
-	margin-inline: 10vh;
+	margin: 5rem;
 	position: relative;
 	width: 200px;
 	height: 200px;
@@ -225,7 +229,7 @@ p {
 	top: 30%;
 }
 
-.linkto:hover {
+.circle:hover {
 	box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 42px rgb(255, 255, 255),
 		0 0 77px rgb(253, 253, 253), 0 0 100px rgb(255, 255, 255);
 	text-shadow: 0 0 70px #000, 0 0 10px #000, 0 0 60px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0),
@@ -262,7 +266,7 @@ p {
 	}
 
 	.circle {
-		margin: 2rem;
+		margin: 5rem;
 	}
 }
 </style>

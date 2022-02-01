@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 body {
 	margin: 0px;
 	min-height: 100%;
@@ -48,20 +48,27 @@ main {
 }
 
 button {
+	width: 5em;
+	height: 5em;
+	font-size: 25px;
 	cursor: pointer;
-	font-size: 2vh;
 	font-weight: bold;
 	border-radius: 50%;
 	border: 5px solid #0d0d0d;
 	transition: 0.3s;
+	position: relative;
 }
 
-#yes {
-	padding: 3vh 2.5vh;
+button::after {
+	content: " ";
+	animation: pulse 1.5s infinite ease-out;
 }
 
-#no {
-	padding: 3vh 2vh;
+@keyframes pulse {
+	to {
+		transform: scale(1.5);
+		opacity: 0;
+	}
 }
 
 button:hover {
