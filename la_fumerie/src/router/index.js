@@ -1,17 +1,23 @@
 import { createRouter, createWebHistory } from "vue-router";
-import CheckAge from "../views/CheckAge";
-import Main from "../views/Main";
+import Cities from "../views/Cities";
+import Montpellier from "../views/Montpellier";
+import Grenoble from "../views/Grenoble";
 
 const routes = [
 	{
 		path: "/",
-		name: "CheckAge",
-		component: CheckAge
+		name: "Cities",
+		component: Cities
 	},
 	{
-		path: "/main",
-		name: "Main",
-		component: Main
+		path: "/montpellier",
+		name: "Montpellier",
+		component: Montpellier
+	},
+	{
+		path: "/grenoble",
+		name: "Grenoble",
+		component: Grenoble
 	}
 ];
 

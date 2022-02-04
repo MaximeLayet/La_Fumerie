@@ -15,6 +15,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	color: #f2f2f2;
-	background-color: #0d0d0d;
+	background: linear-gradient(to right, #d92958, #f2cb57);
 }
 </style>

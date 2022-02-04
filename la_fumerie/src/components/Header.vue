@@ -1,6 +1,9 @@
 <template>
 	<header>
-		<img alt="La Fumerie vodka bar Montpellier" src="../assets/logoF.png" />
+		<img
+			alt="La Fumerie vodka bar et bar à bière à Montpellier et Grenoble"
+			src="../assets/logoF.png"
+		/>
 	</header>
 </template>
 

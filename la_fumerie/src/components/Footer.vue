@@ -31,17 +31,18 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	margin-top: 2vh;
-	border-top: 2px solid #f2f2f2;
+	margin-top: 2rem;
+	border-top: 8px solid #fff;
 }
 
 a {
 	text-decoration: none;
-	color: #f2f2f2;
+	color: #fff;
 }
 
 p {
 	transition: 0.3s;
+	font-size: 1.5rem;
 }
 
 p:hover {
@@ -51,8 +52,9 @@ p:hover {
 }
 
 .mentions {
-	padding: 2vh;
+	padding: 2rem;
 	margin-left: auto;
 	transition: 0.6s;
+	color: #000;
 }
 </style>
