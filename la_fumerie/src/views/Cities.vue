@@ -5,12 +5,18 @@
 			<h1>Choisis ta ville</h1>
 		</div>
 		<div class="cities">
-			<router-link to="/Montpellier">
-				<h2>Montpellier</h2>
-			</router-link>
-			<router-link to="/Grenoble">
-				<h2>Grenoble</h2>
-			</router-link>
+			<div class="montpellier">
+				<router-link to="/Montpellier">
+					<h2>Montpellier</h2>
+					<img src="../assets/villemtp.jpg" alt="Montpellier" class="pic mtp" />
+				</router-link>
+			</div>
+			<div class="grenoble">
+				<router-link to="/Grenoble">
+					<h2>Grenoble</h2>
+					<img src="../assets/villegre.jpg" alt="Grenoble" class="pic gre" />
+				</router-link>
+			</div>
 		</div>
 	</main>
 	<Footer />
@@ -65,6 +71,20 @@ h2 {
 h2:hover {
 	transform: scale(1.4);
 	transition: 0.3s ease-in-out;
+}
+
+.pic {
+	width: 32em;
+	height: 32em;
+	border-radius: 50%;
+	box-shadow: 0 0 15px #000;
+	transition: 0.3s ease-in-out;
+	object-fit: cover;
+}
+
+.pic:hover {
+	transition: 0.3s ease-in-out;
+	box-shadow: 0 0 15px 0 #fff;
 }
 
 a {
