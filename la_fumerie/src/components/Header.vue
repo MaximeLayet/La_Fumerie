@@ -13,12 +13,18 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 img {
 	margin-top: 1vh;
 	margin-bottom: 3vh;
 	width: 33%;
 	filter: invert(1);
 	object-fit: cover;
+}
+
+@media screen and (max-width: 320px) {
+	img {
+		width: 15rem;
+	}
 }
 </style>

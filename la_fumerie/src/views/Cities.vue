@@ -1,93 +1,116 @@
 <template>
-	<Header />
-	<main>
-		<div>
-			<h1>Choisis ta ville</h1>
-		</div>
-		<div class="cities">
-			<div class="montpellier">
-				<router-link to="/Montpellier">
-					<h2>Montpellier</h2>
-					<img src="../assets/villemtp.jpg" alt="Montpellier" class="pic mtp" />
-				</router-link>
+	<div>
+		<Header />
+		<h1>Choisis ta ville</h1>
+		<main class="choice">
+			<div id="mtp" class="city">
+				<p id="mtp-responsive">Montpellier</p>
 			</div>
-			<div class="grenoble">
-				<router-link to="/Grenoble">
-					<h2>Grenoble</h2>
-					<img src="../assets/villegre.jpg" alt="Grenoble" class="pic gre" />
-				</router-link>
+			<div id="gre" class="city">
+				<p id="gre-responsive">Grenoble</p>
 			</div>
-		</div>
-	</main>
-	<Footer />
+		</main>
+	</div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
 
 export default {
 	components: {
-		Header,
-		Footer
+		Header
 	}
 };
 </script>
 
-<style scoped>
-body {
-	margin: 0px;
-	min-height: 100%;
-	width: 100%;
-}
-
-main {
-	margin-bottom: 10em;
-}
+<style lang="scss" scoped>
+$font-color1: #f1f1f1;
+$font-color2: #0d0d0d;
 
 h1 {
-	padding-bottom: 1rem;
-	margin-bottom: 1rem;
-	font-size: 7rem;
-	font-weight: bold;
-	margin-top: 4rem;
-	margin-bottom: 4rem;
-	color: #000;
 	text-transform: uppercase;
+	font-size: 3em;
+	letter-spacing: 0.3em;
+	color: $font-color1;
 }
 
-.cities {
+.choice {
 	display: flex;
 	justify-content: space-around;
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+
+	.city {
+		border-radius: 50%;
+		width: 20rem;
+		height: 20rem;
+		cursor: url(../assets/beermug.png), pointer;
+		p {
+			font-size: 2em;
+			text-transform: uppercase;
+			font-style: italic;
+			font-weight: bold;
+			padding: 2rem;
+			color: $font-color2;
+			text-shadow: 1px 1px $font-color1;
+		}
+	}
 }
 
-h2 {
-	color: #fff;
-	font-size: 4rem;
-	cursor: pointer;
-	transition: 0.3s ease-in-out;
-}
-
-h2:hover {
-	transform: scale(1.4);
-	transition: 0.3s ease-in-out;
-}
-
-.pic {
-	width: 32em;
-	height: 32em;
-	border-radius: 50%;
-	box-shadow: 0 0 15px #000;
-	transition: 0.3s ease-in-out;
+#mtp {
+	background: url(../assets/villemtp.jpg);
+	background-size: cover;
 	object-fit: cover;
 }
 
-.pic:hover {
-	transition: 0.3s ease-in-out;
-	box-shadow: 0 0 15px 0 #fff;
+#gre {
+	background: url(../assets/villegre.jpg);
+	background-size: cover;
+	object-fit: cover;
 }
 
 a {
 	text-decoration: none;
+}
+
+@media screen and (max-width: 320px) {
+	.choice {
+		display: flex;
+		flex-direction: column;
+		padding-top: 2rem;
+		padding-bottom: 0;
+
+		.city {
+			display: flex;
+			margin-bottom: 2rem;
+			p {
+				padding: 0.5rem;
+				text-shadow: none;
+				border: 5px solid $font-color1;
+				width: 75%;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	#mtp-responsive {
+		background: url(../assets/villemtp.jpg);
+		background-size: cover;
+		object-fit: cover;
+	}
+
+	#gre-responsive {
+		background: url(../assets/villegre.jpg);
+		background-size: cover;
+		object-fit: cover;
+	}
+
+	#mtp {
+		background: none;
+	}
+
+	#gre {
+		background: none;
+	}
 }
 </style>
